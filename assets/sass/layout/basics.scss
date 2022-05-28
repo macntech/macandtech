@@ -1,0 +1,118 @@
+/********************* GENERAL STYLES ************************/
+
+body {
+    background: var(--color-bg);
+    font-family: $font-standard;
+    font-size: 0.9rem;
+    color: var(--color-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/********************* FONT SIZES ************************/
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  font-family: $font-headline;
+  color: var(--color-bw);
+}
+
+h1,.h1 {font-size: 1.6rem;}
+h2,.h2 {font-size: 1.4rem;}
+h3,.h3 {font-size: 1.1rem;}
+h4,.h4 {font-size: 1.0rem;}
+
+
+/* Font Manipulation */
+h2,.h2 {
+  text-transform:uppercase; 
+  text-decoration: underline; 
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #307B7C;
+  padding-bottom: 0.8rem;
+}
+h3,.h3 {word-spacing: -0.2rem; }
+
+.underline {
+  text-decoration: underline; 
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #307B7C;
+}
+
+.content h3 {
+  padding-top: 1.5rem;
+}
+
+
+/********************* FONT Colors ************************/
+
+
+
+
+
+/********************* LINK Colors ************************/
+
+a {
+  color: var(--color-link);
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.3rem;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p a{
+  text-decoration: none;
+}
+
+.nodecoration {
+  text-decoration: none;
+}
+
+
+
+/********************* INDEX ************************/
+
+.card {
+  background: var(--color-card);
+  border: none;
+}
+
+.navbar {
+  background: var(--color-navbar);
+}
+
+.social-icons i{
+  padding-right: 5px;
+}
+
+
+/********************* TAG CLOUD ************************/
+
+ul.index-tags-cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+ul.index-tags-cloud a{
+  display: block;
+  font-family: $font-standard;
+  position: relative;
+  text-decoration: none;
+}

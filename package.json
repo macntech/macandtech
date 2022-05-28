@@ -1,0 +1,41 @@
+{
+  "name": "macandtech",
+  "version": "1.0.0",
+  "description": "A Clean Ghost blogging theme for macandtech.com",
+  "engines": {
+    "ghost": ">=5.0.0"
+  },
+  "license": "gpl-3.0",
+  "author": {
+    "name": "Johannes Geisslinger",
+    "email": "jo@macn.tech",
+    "url": "https://macandtech.com"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Blog",
+      "bootstrap",
+      "projects"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme",
+    "british",
+    "blog",
+    "coding",
+    "projects",
+    "dark mode"
+  ],
+  "config": {
+    "posts_per_page": 4,
+    "image_sizes": {}
+  },
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "gscan": "^4.29.2"
+  }
+}

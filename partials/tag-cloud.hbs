@@ -1,0 +1,13 @@
+<div class="row mt-4 p-3">
+        <h2>Tags</h2>
+        <ul class="index-tags-cloud">
+            {{#get "posts"}}
+            {{#get "tags" limit="all" include="count.posts"}}
+              {{#foreach tags}}
+                {{!-- Create a li for each tag and style size: use base size 0.8rem + variable based on qty of posts --}}
+                <li class="p-2"><a href="{{url}}" style="font-size:calc(0.8rem + ({{count.posts}}rem/{{../../posts.length}}));">{{name}}</a></li>
+              {{/foreach}}
+            {{/get}} 
+            {{/get}} 
+          </ul> 
+</div>

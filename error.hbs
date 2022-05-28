@@ -1,0 +1,27 @@
+{{!--
+This error template is used for all 404 errors.
+You need to build the complete structre as the default.hbs will not be pulled!
+--}}
+<!doctype html>
+<html lang="{{@site.locale}}">
+
+    <head>
+        {{> "head"}}
+    </head>
+
+    <body data-theme="light" class="line-numbers">
+        
+        {{"navigation"}}
+        
+        <div class="container-md">
+          <div class="card mt-3 p-2">
+              <div class="card-title underline"><h1>Ooooops</h1></div>
+              <div class="card-subtitle mt-3">What the....are you doing here?</div>
+              <div class="card-text mt-4"><b>Error {{statusCode}} - {{message}}</b></div>
+              <div class="mt-3"><a href="{{@site.url}}" class="link">Return me home</a></div></div>
+          </div>
+        </div>
+
+        {{> "scripts"}}
+    </body>
+</html>

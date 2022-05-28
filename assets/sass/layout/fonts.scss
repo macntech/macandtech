@@ -1,0 +1,22 @@
+//Load local Fonts
+
+@font-face{
+    font-family: 'JetBrains R';
+    src: url("../fonts/JetBrainsMono/JetBrainsMono-Regular.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'JetBrains B';
+    src: url("../fonts/JetBrainsMono/JetBrainsMono-Bold.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'JetBrains M';
+    src: url("../fonts/JetBrainsMono/JetBrainsMono-Medium.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'OpenSans R';
+    src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format('truetype');
+}
+
+//Link Fonts for Usage
+$font-standard: 'OpenSans R';
+$font-headline: 'JetBrains M';

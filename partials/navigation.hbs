@@ -1,0 +1,56 @@
+{{!-------------
+*   Navigation 
+*
+---------------}}
+
+{{#if isSecondary}}
+    
+         {{!-- Styling for Social Links using Fontawesome  --}}
+        {{#foreach navigation}}
+        <i class="social_icon">
+             <a href="{{url}} " target="_blank" alt="{{label}}"><i class="fab fa-{{label}}"></i></a>   
+        </i>
+        {{/foreach}}
+
+{{else}}
+
+<nav class="navbar border-bottom border-top navbar-expand">
+  <div class="container-fluid">
+
+    <div class="navbar-brand">
+       <a href="/" alt="macandtech.com"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+    </div>
+
+
+    {{!-- Mobile Toggler
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>--}}
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      {{!-- Navigation --}}
+      <ul class="navbar-nav p-3">
+         {{#foreach navigation}}
+                        <li class="nav-item p-2"><a href="{{url absolute="true"}}"><h4>{{label}}</h4></a></li>
+         {{/foreach}}
+      </ul>
+
+      {{!-- Settings --}}
+      <div class="d-flex">
+          {{!-- Theme Switch --}}
+          <label class="switch">
+            <p>Theme Switcher</p>
+            <input id="theme-switch" type="checkbox">
+            <span class="slider"></span>
+          </label>        
+      </div>
+      <div class="d-flex p-3">
+        <button class="p-1 btn btn-secondary border-1" data-portal=signup>Subscribe</button>
+      </div>
+    
+    </div>
+  </div>
+</nav>
+
+{{/if}}

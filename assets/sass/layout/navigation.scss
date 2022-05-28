@@ -1,0 +1,95 @@
+
+
+
+/******** Theme Switcher ***********/
+
+:root {
+    --toggle-light: #96959B;
+    --toggle-dark: #24883F;
+  }
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+
+  .switch p{
+    display: none;
+  }
+  
+  /* Hide default html checkbox */
+  .switch input {
+    opacity: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--toggle-dark);
+    transition: 0.4s;
+    border-radius: 0px;
+  }
+  
+  .slider i{
+    padding-top: 7.5px;
+  }
+
+  .slider i:first-child{
+    padding-left: -10px;
+  }
+  
+  
+  .slider:before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 25px;
+    bottom: 3px;
+    border-radius: 0%;
+    background-color: #fff;
+    transition: 0.4s all ease;
+  }
+  
+  
+  input:checked + .slider {
+    background: var(--toggle-light);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(-21px);
+  }
+  
+  input:checked + .round::before {
+    background-color: #ffffff;
+  }
+
+
+  .navbar-brand img {
+    max-width: 8vw;
+    display: block;
+    width: 100%;
+  }
+
+  /* Secondary Navigation - Social Media Links */
+
+  .social_icon::after{
+    content:"and";
+    font-style: normal;
+    color: var(--color-font);
+  }
+
+  .social_icon:last-child::after{
+    content:".";
+    color: var(--color-font);
+  }

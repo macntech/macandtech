@@ -1,0 +1,11 @@
+//Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//COCO THEME
+@import "./layout/theme.scss";
+@import "./layout/fonts.scss";
+
+//Styles
+@import "./layout/navigation.scss";
+@import "./layout/basics.scss";
+@import "./layout/ghost.scss";

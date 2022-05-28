@@ -1,0 +1,19 @@
+<title>{{meta_title}}</title>
+    {{!-- Meta Tags --}}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{meta_description}}">
+
+    {{!-- Dynamic header content for SEO, meta tags, code injection etc --}}
+    {{ghost_head}}
+    
+    {{!-- sass theme and bootstrap 
+    compile with sass ./assets/sass/main.scss ./assets/css/main.css --}}
+    <link rel="stylesheet" href="{{asset "css/main.css"}}">
+
+    {{!-- Fontawesome --}}
+    <link rel="stylesheet" href="{{asset "css/all.css"}}">
+    {{!-- Prism --}}
+    <link rel="stylesheet" href="{{asset "css/prism.css"}}">
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">

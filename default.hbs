@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{@site.locale}}">
+
+    <head>
+        {{!-- SCRIPTS AND CSS --}} 
+        {{> "head"}}
+    </head>
+    
+    <body data-theme="light" class="line-numbers">
+
+         {{"navigation"}}
+
+        <div class="container-md">
+            {{{body}}}
+        </div>
+        {{> "footer"}}
+        {{> "scripts"}}
+   </body>
+</html>

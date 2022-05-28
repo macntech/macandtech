@@ -1,0 +1,30 @@
+{{!< default-blank}}
+
+<div class="mt-3">
+    <img src="{{@site.logo}}" alt="{{@site.title}}" width="130px" />
+</div>
+
+{{!-- Intro--}}
+    <div class="mt-2 p-3">
+        <h1 class="d-flex justify-content-center">{{@site.title}}</h1>
+        <div class="card mt-3">
+            <div class="card-body">
+                <p>{{@site.description}}</p>
+                <p>Visit me and my work on {{navigation type="secondary"}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center mb-5">
+        <a href="/blog/" alt="Go to Blog">
+            <button class="btn btn-light btn-outline-dark">Read my Blog</div>
+        </a>
+    </div>
+
+    <div style="display:none">
+        <label class="switch">
+            <p>Theme Switcher</p>
+            <input id="theme-switch" type="checkbox">
+            <span class="slider"></span>
+        </label>        
+    </div>

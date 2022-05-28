@@ -1,0 +1,61 @@
+//---------------  COLORS --------------------- //
+
+//Light
+$light-color-bg: #F5F2F0;
+$light-color-card: #FFFFFF;
+$light-color-bw: #000000;
+$light-color-font: #323232;
+$light-color-navbar: #ffffff;
+$light-color-link: #307B7C;
+
+//DARK
+$dark-color-bg: rgba(33, 33, 33, 1.0);
+$dark-color-card: #626463;
+$dark-color-bw: #ffffff;
+$dark-color-font: #F5F2F0;
+$dark-color-navbar: #333535;
+$dark-color-link:#307B7C;
+
+
+//------------- END COLORS --------------------- //
+
+
+
+@mixin light {
+    --color-mode: "light";
+    --color-bg: #{$light-color-bg};
+    --color-card: #{$light-color-card};
+    --color-bw: #{$light-color-bw};
+    --color-font: #{$light-color-bw};
+    --color-navbar: #{$light-color-navbar};
+    --color-link: #{$light-color-link};
+}
+
+@mixin dark {
+    --color-mode: "dark";
+    --color-bg: #{$dark-color-bg};
+    --color-card: #{$dark-color-card};
+    --color-bw: #{$dark-color-bw};
+    --color-font: #{$dark-color-bw};
+    --color-navbar: #{$dark-color-navbar};
+    --color-link: #{$dark-color-link};
+}
+
+//If auto we always use light theme
+body[data-theme='auto'] {
+    @include light();
+  
+    @media (prefers-color-scheme: dark) {
+      @include dark();
+    }
+  }
+
+//include light theme
+body[data-theme='light'] {
+    @include light();
+}
+
+//include dark theme
+body[data-theme='dark'] {
+    @include dark();
+}

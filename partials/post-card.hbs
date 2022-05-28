@@ -1,0 +1,20 @@
+<div class="card mt-2">
+            <div class="card-body">
+                <div class="row mb-2">
+                    <div class="col-auto social-icons">
+                        {{> "components/post-icons"}}
+                    </div>
+                    <div class="col-10 text-break"><a href="{{url}}" class="nodecoration" alt="{{title}}"><h3 class="card-title">{{title}}</h3></a></div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-auto text-break"><p>{{excerpt}}</p></div>
+                </div>
+                {{!-- 
+                <div class="row mb-2">
+                    <div class="col-auto cc_index_meta"><a href="{{url}}" class="nodecoration">Read here <i class="fas fa-desktop"></i></a></div>
+                    <div class="col-auto opacity-50"><time datetime="{{ time .Date }}" itemprop="datePublished">Posted {{date published_at format="MMM DD - YYYY"}}</time></div>
+                    <div class="col-auto"></div>
+                </div> 
+                --}}
+            </div>
+        </div>
