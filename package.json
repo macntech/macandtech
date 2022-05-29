@@ -1,6 +1,6 @@
 {
   "name": "macandtech",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Clean Ghost blogging theme for macandtech.com",
   "engines": {
     "ghost": ">=5.0.0"
@@ -10,6 +10,9 @@
     "name": "Johannes Geisslinger",
     "email": "jo@macn.tech",
     "url": "https://macandtech.com"
+  },
+  "scripts": {
+    "test": "gscan ."
   },
   "gpm": {
     "type": "theme",
@@ -36,6 +39,7 @@
   },
   "devDependencies": {
     "bootstrap": "^5.1.3",
-    "gscan": "^4.29.2"
+    "gscan": "^4.31.0",
+    "sass": "^1.52.1"
   }
 }

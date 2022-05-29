@@ -1,13 +1,21 @@
-<div class="card mt-2">
+<div class="card mb-4">
             <div class="card-body">
-                <div class="row mb-2">
+                <div class="row mb-1">
+                    <div class="text-break">
+                        <a href="{{url}}" class="nodecoration" alt="{{title}}">
+                            <h2 class="card-title">{{title}}</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-2 border-bottom border-top pt-3">
+                    <div class="col-auto text-break">
+                        <p>{{excerpt}}</p>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-auto social-icons">
                         {{> "components/post-icons"}}
                     </div>
-                    <div class="col-10 text-break"><a href="{{url}}" class="nodecoration" alt="{{title}}"><h3 class="card-title">{{title}}</h3></a></div>
-                </div>
-                <div class="row mb-2">
-                    <div class="col-auto text-break"><p>{{excerpt}}</p></div>
                 </div>
                 {{!-- 
                 <div class="row mb-2">

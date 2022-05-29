@@ -1,11 +1,10 @@
 {{!-------------
-*   Navigation 
-*
+*   Navigation
 ---------------}}
 
+{{!-- Secondary Navigation for Social Media Links  --}}
 {{#if isSecondary}}
     
-         {{!-- Styling for Social Links using Fontawesome  --}}
         {{#foreach navigation}}
         <i class="social_icon">
              <a href="{{url}} " target="_blank" alt="{{label}}"><i class="fab fa-{{label}}"></i></a>   
@@ -14,7 +13,8 @@
 
 {{else}}
 
-<nav class="navbar border-bottom border-top navbar-expand">
+{{!-- Primary Navigation  --}}
+<nav class="navbar sticky-top border-bottom navbar-expand">
   <div class="container-fluid">
 
     <div class="navbar-brand">
@@ -36,15 +36,16 @@
          {{/foreach}}
       </ul>
 
-      {{!-- Settings --}}
+      {{!-- Theme Switcher --}}
       <div class="d-flex">
-          {{!-- Theme Switch --}}
           <label class="switch">
             <p>Theme Switcher</p>
             <input id="theme-switch" type="checkbox">
             <span class="slider"></span>
           </label>        
       </div>
+
+      {{!-- Subscription Switcher --}}
       <div class="d-flex p-3">
         <button class="p-1 btn btn-secondary border-1" data-portal=signup>Subscribe</button>
       </div>

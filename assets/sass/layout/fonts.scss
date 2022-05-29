@@ -5,6 +5,10 @@
     src: url("../fonts/JetBrainsMono/JetBrainsMono-Regular.ttf") format('truetype');
 }
 @font-face{
+    font-family: 'JetBrains L';
+    src: url("../fonts/JetBrainsMono/JetBrainsMono-Light.ttf") format('truetype');
+}
+@font-face{
     font-family: 'JetBrains B';
     src: url("../fonts/JetBrainsMono/JetBrainsMono-Bold.ttf") format('truetype');
 }
@@ -18,5 +22,5 @@
 }
 
 //Link Fonts for Usage
-$font-standard: 'OpenSans R';
+$font-standard: 'JetBrains L';
 $font-headline: 'JetBrains M';

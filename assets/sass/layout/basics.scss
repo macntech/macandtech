@@ -3,7 +3,7 @@
 body {
     background: var(--color-bg);
     font-family: $font-standard;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--color-font);
 }
 
@@ -15,6 +15,10 @@ img {
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.8;
 }
 
 /********************* FONT SIZES ************************/
@@ -39,9 +43,11 @@ h2,.h2 {
   text-transform:uppercase; 
   text-decoration: underline; 
   text-decoration-thickness: 3px;
-  text-underline-offset: 0.5rem;
-  text-decoration-color: #307B7C;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: var(--color-link);
   padding-bottom: 0.8rem;
+  padding-top: 1.2rem;
+  line-height: 1.8;
 }
 h3,.h3 {word-spacing: -0.2rem; }
 
@@ -49,7 +55,7 @@ h3,.h3 {word-spacing: -0.2rem; }
   text-decoration: underline; 
   text-decoration-thickness: 3px;
   text-underline-offset: 0.5rem;
-  text-decoration-color: #307B7C;
+  text-decoration-color: var(--color-link);
 }
 
 .content h3 {
@@ -71,7 +77,8 @@ a {
   text-underline-offset: 0.3rem;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--color-link);
 }
 
 p a{

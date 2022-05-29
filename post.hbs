@@ -1,17 +1,19 @@
-
 {{!< default}}
 
 {{!-- Everything inside the #post tags pulls data from the POST --}}
 {{#post}}
 
 <div class="card mt-4">
-            <div class="card-body">
+        <div class="card-body">
+
                 <div class="row mb-2">
                     <div class="col-10 text-break mt-2"><h1 class="card-title underline">{{title}}</h1></div>
                 </div>
+
                 <div class="row">
                     <div class="col-10 opacity-50 mt-3">
                         Posted <time datetime="{{ time .Date }}" itemprop="datePublished">{{date published_at format="MMM DD - YYYY"}}</time> in {{tags}}
+                        <hr>
                     </div>
                 </div> 
 
@@ -19,10 +21,7 @@
                     {{content}}
                 </div>
                 
-            </div>
-  </div>
-
-
-
+        </div>
+</div>
 
 {{/post}}
