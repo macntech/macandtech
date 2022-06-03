@@ -12,7 +12,8 @@
     "url": "https://macandtech.com"
   },
   "scripts": {
-    "test": "gscan ."
+    "test": "gscan .",
+    "sass": "sass ./assets/sass/main.scss ./assets/css/main.css"
   },
   "gpm": {
     "type": "theme",

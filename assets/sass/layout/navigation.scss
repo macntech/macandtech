@@ -81,6 +81,19 @@
     width: 100%;
   }
 
+  .nav-item {
+    padding-left: $spacer*.5;
+  }
+
+  @media (max-width: 750px){
+
+    .nav-item {
+      padding-top: $spacer*.5;
+      padding-left: 0rem;
+    }
+
+  }
+
   /* Secondary Navigation - Social Media Links */
 
   .social_icon::after{

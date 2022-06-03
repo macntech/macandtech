@@ -11256,6 +11256,16 @@ input:checked + .round::before {
   width: 100%;
 }
 
+.nav-item {
+  padding-left: 0.5rem;
+}
+
+@media (max-width: 750px) {
+  .nav-item {
+    padding-top: 0.5rem;
+    padding-left: 0rem;
+  }
+}
 /* Secondary Navigation - Social Media Links */
 .social_icon::after {
   content: "and";
@@ -11345,6 +11355,10 @@ h3, .h3 {
 }
 
 /********************* FONT Colors ************************/
+.color-bw {
+  color: var(--color-bw);
+}
+
 /********************* LINK Colors ************************/
 a {
   color: var(--color-link);

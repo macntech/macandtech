@@ -52,3 +52,4 @@ function checkTheme() {
 })
 
 //============= END THEME SWITCHER ========================= //
+
