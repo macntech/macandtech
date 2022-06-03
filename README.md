@@ -1,6 +1,6 @@
 ## macandtech.com Ghost Theme
 
-Ghost Theme for my personal blog macandtech.com. You can use this theme under GPL for your own projects. 
+Ghost Theme for my personal blog `macandtech.com`. You can use this theme under GPL for your own projects. 
 
 ### Development
 
@@ -13,11 +13,12 @@ npm install
 
 Compile SASS before commit with:
 ```bash
-sass ./assets/sass/main.scss ./assets/css/main.css
+npm run sass
 ```
-use --watch flag for development.
 
-Theme has an automatic deployment on the running page with Github actions. Routes need to be manually updated. 
+Theme has an deployment `workflow` with Github actions so that you can auto deploy any changes directly into your Ghost installation. 
+
+Routes need to be manually updated based on the `routes.yaml`
 
 
 

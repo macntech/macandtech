@@ -11312,7 +11312,7 @@ h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 h2, .h2 {
@@ -11328,6 +11328,14 @@ h4, .h4 {
 }
 
 /* Font Manipulation */
+h1, .h1 {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: var(--color-link);
+  line-height: 1.8;
+}
+
 h2, .h2 {
   text-transform: uppercase;
   text-decoration: underline;
@@ -11407,6 +11415,16 @@ ul.index-tags-cloud a {
   font-family: "JetBrains L";
   position: relative;
   text-decoration: none;
+}
+
+/******* Comments *******/
+.timeline-comment .avatar > img {
+  height: 20px;
+  width: 20px;
+}
+
+.timeline-header em {
+  display: none;
 }
 
 /*Ghost Styles*/
