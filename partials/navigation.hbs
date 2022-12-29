@@ -14,42 +14,52 @@
 {{else}}
 
 {{!-- Primary Navigation  --}}
-<nav class="navbar sticky-top border-bottom navbar-expand-sm">
-  <div class="container-fluid">
+<nav class="navbar sticky-top border-bottom navbar-expand-md p-0">
+  <div class="container">
 
     <div class="navbar-brand">
-       <a href="/" alt="macandtech.com"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+        <a href="/" alt="macandtech.com"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
     </div>
 
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-laptop-code color-bw"></i>
+     
+      <i class="fas fa-bars color-bw"></i>
     </button>
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       
       {{!-- Navigation --}}
-      <ul class="navbar-nav p-3">
+      <ul class="navbar-nav">
          {{#foreach navigation}}
-                        <li class="nav-item"><a href="{{url absolute="true"}}"><h4>{{label}}</h4></a></li>
+                        <li class="nav-item p-3"><a href="{{url absolute="true"}}"><h4>{{label}}</h4></a></li>
          {{/foreach}}
       </ul>
 
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
       {{!-- Theme Switcher --}}
-      <div class="nav-item d-flex p-3">
+      <li>
+        <div class="nav-item p-3">
           <label class="switch">
             <p>Theme Switcher</p>
             <input id="theme-switch" type="checkbox">
             <span class="slider"></span>
           </label>        
-      </div>
-
+        </div>
+      </li>
       {{!-- Subscription Switcher --}}
-      <div class="d-flex p-3">
-        <button class="p-1 btn btn-secondary border-1" data-portal=signup>Subscribe</button>
-      </div>
-    
+      <li>
+        <div class="nav-item p-3">
+          <button class="p-1 btn btn-secondary border-1" data-portal=signup>Subscribe</button>
+        </div>
+      </li>
+      </ul>
+
     </div>
+    
+    
   </div>
 </nav>
 

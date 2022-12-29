@@ -4,30 +4,29 @@
 {{#post}}
 
 <div class="card mt-4">
-        <div class="card-body">
+        <div class="card-body pb-2">
 
-                <div class="row mb-2">
-                    <div class="col-10 text-break mt-2"><h1 class="card-title">{{title}}</h1></div>
+                <div class="row">
+                    <div class="col-10 text-break pt-1"><h1 class="card-title">{{title}}</h1></div>
                 </div>
 
                 <div class="row">
-                    <div class="col-10 opacity-50 mt-3">
+                    <div class="col-10 opacity-50 pt-2">
                         Posted <time datetime="{{ time .Date }}" itemprop="datePublished">{{date published_at format="MMM DD - YYYY"}}</time> in {{tags}}
                         <hr>
                     </div>
                 </div> 
 
-                <div class="content row mt-4 justify-content-start">
+                <div class="content row mb-3 justify-content-start">
                     {{content}}
                 </div>
-                
         </div>
 </div>
-
+<!--
 <div class="comment">
 
     {{> "post-comment"}}   
 
-</div>
+</div>-->
 
 {{/post}}

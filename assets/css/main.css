@@ -11282,7 +11282,7 @@ input:checked + .round::before {
 body {
   background: var(--color-bg);
   font-family: "JetBrains L";
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--color-font);
 }
 
