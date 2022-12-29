@@ -1,9 +1,17 @@
-<nav class="pagination" role="navigation">
-    {{#if prev}}
-        <a class="newer-posts p-2" href="{{page_url prev}}">&larr; Newer Posts</a>
-    {{/if}}
-    <span class="page-number p-2">Page {{page}} of {{pages}}</span>
-    {{#if next}}
-        <a class="older-posts p-2" href="{{page_url next}}">Older Posts &rarr;</a>
-    {{/if}}
+<nav class="card p-3" role="navigation">
+    <div class="row justify-content-left">
+        <div class="col-auto">
+            {{#if prev}}<a class="p-2 me-auto position-relative" href="{{page_url prev}}"><i class="fas fa-caret-left"></i> Newer Posts</a>
+            {{else}}<span class="opacity-25"><i class="fas fa-caret-left"></i> Newer Posts</span>
+            {{/if}}
+        </div>
+        <div class="col-auto">
+            <span class="p-2 mx-auto">Page {{page}} of {{pages}}</span>
+        </div>
+        <div class="col-auto">
+            {{#if next}}<a class="p-2 ms-auto" href="{{page_url next}}">Older Posts <i class="fas fa-caret-right"></i></a>
+            {{else}}<span class="opacity-25">Older Posts <i class="fas fa-caret-right"></i></span>
+            {{/if}}
+         </div>
+    </div>
 </nav>
