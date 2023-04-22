@@ -1,6 +1,6 @@
 {
   "name": "macandtech",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A Clean Ghost blogging theme for macandtech.com",
   "engines": {
     "ghost": ">=5.0.0"
